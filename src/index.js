@@ -8,25 +8,12 @@ container.appendChild(element)
 
 import React  from 'react'
 import ReactDOM from 'react-dom'
-const user={
-  firtsName: 'Martin',
-  lastName: 'Lopez'
-}
+import Card from './components/Card'
+import 'bootstrap/dist/css/bootstrap.css'
 
-const nombre = 'martin'
-function getName(user){
-  if(user){
-    return `${user.firtsName} ${user.lastName}`
-  }
-  else{
-    return `extraño`
-  }
 
-  
-}
 
-const element =<h1>Hello {getName(user)}</h1>
 
 const container =document.getElementById('root')
 
- ReactDOM.render(element, container)
+ ReactDOM.render(<Card />, container)
