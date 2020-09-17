@@ -1,15 +1,15 @@
 import React from 'react'
 import './styles/Wellcome.css'
 
-function Wellcome (props){
-return(
+function Wellcome(props) {
+  return (
     <div className="container">
-        <div className="Fitness-User-Info">
-          <h1>Hello, {props.userName}</h1>
-          <p>Let´s to workout to get some gains!</p>
-        </div>
+      <div className="Fitness-User-Info">
+        <h1>Hello, {props.userName}</h1>
+        <p>Let´s to workout to get some gains!</p>
+      </div>
     </div>
-)
+  )
 
 
 }

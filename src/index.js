@@ -6,27 +6,18 @@ const container = document.getElementById('root')
 container.appendChild(element)
 */
 
-import React  from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom'
-import Card from './components/Card'
-import Wellcome from './components/Wellcome'
+import Exercises from './pages/Exercises'
 import 'bootstrap/dist/css/bootstrap.css'
 
 
+const container = document.getElementById('root')
 
+ReactDOM.render(
+    <Exercises />, container)
 
-const container =document.getElementById('root')
-
- ReactDOM.render(
-     <div>
-             <Wellcome 
-                        userName="Martín"
-             />
-             <Card
-                        title="Technique Guides"
-                        description="Learn amazing street workout and calisthenics"
-                        rightColour="#A74CF2"
-                        leftColour="617BFB" 
-                        img="https://firebasestorage.googleapis.com/v0/b/tutoriales-e4830.appspot.com/o/exercise.png?alt=media&token=b9c4b236-16a9-4a56-bba2-90c9660a0f06"
-             />
-     </div>, container)
+/*
+Esta es la primer pagina que va a cargar todas las paginas, de aca carga la pagina Exersices que
+está dentro de pages
+*/
