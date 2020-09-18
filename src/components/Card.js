@@ -10,10 +10,11 @@ class Card extends React.Component {
         }
 
     }
+    //esta funciona no la vamos a usar por ahora porque cambiaria la imagen que requerimos a los 5 segundos
     componentDidMount() {
         setTimeout(() => {
             this.setState({
-                image: this.props.img
+               // image: this.props.img
             })
         }, 5000)
 
@@ -31,7 +32,7 @@ class Card extends React.Component {
                 <div className="card-body">
                     <div className="row center">
                         <div className="col-6">
-                            <img src={this.state.image} className="float-right" />
+                            <img src={this.props.img} className="float-right" />
                         </div>
                         <div className="col-6 Fitness-Card-Info">
                             <h1>{title}</h1>
