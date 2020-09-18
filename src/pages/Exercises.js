@@ -1,16 +1,17 @@
 import React from 'react'
-import Card from '../components/Card'
+import ExerciseList from '../components/ExerciseList'
 import Wellcome from '../components/Wellcome'
-import CardJs from './CardJs.json'
+import CardInfo from './CardInfo.json'
 
 class Exercises extends React.Component {
 
     constructor(props) {
         super(props)
         this.state = {
-            data: CardJs
+            data: CardInfo
         }
     }
+   
 
     render() {
         return (
@@ -18,20 +19,10 @@ class Exercises extends React.Component {
                 <Wellcome
                     userName="Martín"
                 />
-                {
-                    this.state.data.map((exercice) => {
-                        return (
-                            <Card
-                                title={exercice.title}
-                                description={exercice.description}
-                                rightColour={exercice.rigthColour}
-                                leftColour={exercice.leftColour}
-                                img={exercice.img}
-                            />
+                <ExerciseList
+                   exercise={this.state.data}
 
-                        )
-                    })
-                }
+                />
             </div>
         )
     }
