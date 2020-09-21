@@ -8,14 +8,14 @@ container.appendChild(element)
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Exercises from './pages/Exercises'
 import 'bootstrap/dist/css/bootstrap.css'
+import App from './components/App'
 
 
 const container = document.getElementById('root')
 
 ReactDOM.render(
-    <Exercises />, container)
+    <App />, container)
 
 /*
 Esta es la primer pagina que va a cargar todas las paginas, de aca carga la pagina Exersices que

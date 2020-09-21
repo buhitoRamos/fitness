@@ -1,7 +1,7 @@
 import React from 'react'
 import ExerciseList from '../components/ExerciseList'
 import Wellcome from '../components/Wellcome'
-import CardInfo from './CardInfo.json'
+import CardInfo from '../components/CardInfo.json'
 import BtnNavegation from '../components/BtnNavegation'
 
 class Exercises extends React.Component {

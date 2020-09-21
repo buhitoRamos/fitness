@@ -1,23 +1,24 @@
 import React from 'react'
 import './styles/Btn.css'
 import btn from '../images/btn.png'
+import { Link } from 'react-router-dom'
 
-function BtnNavegation (props)  {
-   
+function BtnNavegation(props) {
 
-    return(
-        
-    <div>
-        <a href="/exercises/new">
-    <img src={btn} className="btn" />
-    </a>
 
-   </div>
+    return (
+
+        <div>
+            <Link to="/exercise/new">
+                <img src={btn} className="btn" />
+            </Link>
+
+        </div>
     )
-    
+
 }
 
 export default BtnNavegation
 /*
-Este componente es el boton de navegación 
+Este componente es el boton de navegación
 */
