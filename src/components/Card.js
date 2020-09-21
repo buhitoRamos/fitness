@@ -22,11 +22,11 @@ class Card extends React.Component {
 
     render() {        
 
-        const { title, description, rightColour, leftColour, img } = this.props
+        const { title, description, rightColor, leftColor, img } = this.props
         return (
             <div className="card mx-auto Fitness-Card"
                 style={{
-                    backgroundImage: `url(${circleImg}), linear-gradient(to right, ${rightColour}, ${leftColour})`
+                    backgroundImage: `url(${circleImg}), linear-gradient(to right, ${rightColor}, ${leftColor})`
                 }}
             >
                 <div className="card-body">

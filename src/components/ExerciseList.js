@@ -5,13 +5,13 @@ function ExerciseList(props){
     return(
         <div>
             {
-                props.exercise.map((exercise) => {
+                props.exercise.map( exercise => {
                     return (
                         <Card
                             title={exercise.title}
                             description={exercise.description}
-                            rightColour={exercise.rigthColour}
-                            leftColour={exercise.leftColour}
+                            rightColor={exercise.rightColor}
+                            leftColor={exercise.leftColor}
                             img={exercise.img}
                         />
             
