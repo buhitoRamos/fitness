@@ -25,6 +25,7 @@ class Exercises extends React.Component {
 
                 />
                 <BtnNavegation
+                url="/exercise/new"
                 />
             </div>
         )

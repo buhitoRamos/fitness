@@ -9,7 +9,7 @@ function BtnNavegation(props) {
     return (
 
         <div>
-            <Link to="/exercise/new">
+            <Link to={props.url}>
                 <img src={btn} className="btn" />
             </Link>
 

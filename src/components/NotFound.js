@@ -1,4 +1,5 @@
 import React from 'react'
+import BtnNavegation from '../components/BtnNavegation'
 
 function NotFound(props){
 
@@ -7,6 +8,11 @@ function NotFound(props){
             <h1>
                 NOT FOUND
             </h1>
+            <div>
+            <BtnNavegation
+                url="/exercises"
+                />
+            </div>
         </div>
     )
 }

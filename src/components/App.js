@@ -11,7 +11,7 @@ function App(props) {
             <BrowserRouter>
             <Switch>
             <Route path='/exercises' component={Exercises} />
-            <Route path='/exercises/new' component={ExerciseNew} />
+            <Route path='/exercise/new' component={ExerciseNew} />
             <Route component={NotFound} />
 
             </Switch>
