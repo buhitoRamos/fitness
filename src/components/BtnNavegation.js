@@ -29,6 +29,6 @@ export default BtnNavegation
 Este componente es el boton de navegación
 ............................................................................................
 Lo que esta comentado es porque como se resolvió mas abajo es con una manera mas moderna de
-escribir javascript, React como tiene incorporado Babel hace que sea compatible
+escribir javascript ES7, React como tiene incorporado Babel hace que sea compatible
 con todos los navegadores
 */

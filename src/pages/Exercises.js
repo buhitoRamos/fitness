@@ -6,13 +6,11 @@ import BtnNavegation from '../components/BtnNavegation'
 
 class Exercises extends React.Component {
 
-    constructor(props) {
-        super(props)
-        this.state = {
-            data: CardInfo
-        }
+    state = {
+        data: CardInfo
     }
-   
+
+
 
     render() {
         return (
@@ -21,11 +19,11 @@ class Exercises extends React.Component {
                     userName="Martín"
                 />
                 <ExerciseList
-                   exercise={this.state.data}
+                    exercise={this.state.data}
 
                 />
                 <BtnNavegation
-                url="/exercise/new"
+                    url="/exercise/new"
                 />
             </div>
         )
@@ -37,4 +35,7 @@ export default Exercises
 Esta es la pagina de Exercises que carga los componentes de ejercicios por el momento tenemos:
 Card==> componente de clase mas dinamico
 Wellcome==> componente funcional
+.................................................................................
+ahora utilizamos ES7 entonces elimino constructor pero mantengo el state
+
 */
