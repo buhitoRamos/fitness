@@ -3,22 +3,32 @@ import './styles/Btn.css'
 import btn from '../images/btn.png'
 import { Link } from 'react-router-dom'
 
-function BtnNavegation(props) {
+// function BtnNavegation(props) {
+//     return (
 
+//         <div>
+//             <Link to={props.url}>
+//                 <img src={btn} className="btn" />
+//             </Link>
 
-    return (
+//         </div>
+//     )
 
-        <div>
-            <Link to={props.url}>
-                <img src={btn} className="btn" />
-            </Link>
+// }
+const BtnNavegation = (props) => (
+    <div>
+        <Link to={props.url}>
+            <img src={btn} className="btn" />
+        </Link>
 
-        </div>
-    )
-
-}
+    </div>
+)
 
 export default BtnNavegation
 /*
 Este componente es el boton de navegación
+............................................................................................
+Lo que esta comentado es porque como se resolvió mas abajo es con una manera mas moderna de
+escribir javascript, React como tiene incorporado Babel hace que sea compatible
+con todos los navegadores
 */
