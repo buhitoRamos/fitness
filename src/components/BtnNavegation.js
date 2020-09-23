@@ -15,9 +15,9 @@ import { Link } from 'react-router-dom'
 //     )
 
 // }
-const BtnNavegation = (props) => (
+const BtnNavegation = ({url}) => (
     <div>
-        <Link to={props.url}>
+        <Link to={url}>
             <img src={btn} className="btn" />
         </Link>
 
