@@ -94,6 +94,8 @@ class ExerciseNew extends React.Component{
                 >
                     Submit
                 </button>
+                <BtnNavegation
+                url="/exercises" />
             </form>
         </div>
         )
