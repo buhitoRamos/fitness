@@ -3,12 +3,7 @@ import BtnNavegation from '../components/BtnNavegation'
 
 class ExerciseForm extends React.Component{
 
-    /*
-    Se inicializa el estate como obeto vacío para que no de error
-    se puede utilizar clases por por la ayuda de BABEL estamos trabajando con ES7
-    */
 
-    state = {}
 
     //e.preventDefault es para que no refresque la pagina al hacer submit
 
@@ -17,19 +12,12 @@ class ExerciseForm extends React.Component{
         console.log(this.state)
     }
 
-    /*
-    Este Evento handleChange(onChange) cada ves que se da un cambio
-     (presiono una tecla) captura el evento con el nombre del input y valor
-    y lo guarda en el state
-    */
+    
 
-    handleChange = e => {
-        this.setState({
-            [e.target.name]: e.target.value
-        })
-    }
+    
 
     render(){
+        const  { onChange, form }=this.props
         return (
             <div className="container">
             <form 
@@ -41,8 +29,8 @@ class ExerciseForm extends React.Component{
                         className="form-control" 
                         placeholder="title" 
                         name="title"
-                        onChange={this.handleChange}
-                        value={this.state.title}
+                        onChange={onChange}
+                        value={form.title}
                     />
                 </div>
                 <div className="form-group">
@@ -51,8 +39,8 @@ class ExerciseForm extends React.Component{
                         className="form-control" 
                         placeholder="description" 
                         name="description"
-                        onChange={this.handleChange}
-                        value={this.state.description}
+                        onChange={onChange}
+                        value={form.description}
                     />
                 </div>
                 <div className="form-group">
@@ -61,8 +49,8 @@ class ExerciseForm extends React.Component{
                         className="form-control" 
                         placeholder="img" 
                         name="img"
-                        onChange={this.handleChange}
-                        value={this.state.img}
+                        onChange={onChange}
+                        value={form.img}
                     />
                 </div>
                 <div className="form-row">
@@ -72,8 +60,8 @@ class ExerciseForm extends React.Component{
                             className="form-control" 
                             placeholder="leftColor" 
                             name="leftColor"
-                            onChange={this.handleChange}
-                            value={this.state.leftColor}
+                            onChange={onChange}
+                            value={form.leftColor}
                         />
                     </div>
                     <div className="col">
@@ -82,8 +70,8 @@ class ExerciseForm extends React.Component{
                             className="form-control"
                             placeholder="rightColor" 
                             name="rightColor"
-                            onChange={this.handleChange}
-                            value={this.state.rightColor}
+                            onChange={onChange}
+                            value={form.rightColor}
                         />    
                     </div>
                 </div>
