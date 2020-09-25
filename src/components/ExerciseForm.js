@@ -1,8 +1,8 @@
 import React from "react"
 import BtnNavegation from '../components/BtnNavegation'
-import  "../components/styles/Btn.css"
+import "../components/styles/Btn.css"
 
-class ExerciseForm extends React.Component{
+class ExerciseForm extends React.Component {
 
 
 
@@ -12,87 +12,82 @@ class ExerciseForm extends React.Component{
         e.preventDefault()
         console.log(this.state)
     }
-
-    
-
-    
-
-    render(){
-        const  { onChange, form }=this.props
+    render() {
+        const { onChange, form } = this.props
         return (
             <div className="container">
-            <form 
-                onSubmit={this.handleSubmit}
-            >
-                <div className="form-group">
-                    <input 
-                        type="text" 
-                        className="form-control" 
-                        placeholder="title" 
-                        name="title"
-                        onChange={onChange}
-                        value={form.title}
-                    />
-                </div>
-                <div className="form-group">
-                    <input 
-                        type="text" 
-                        className="form-control" 
-                        placeholder="description" 
-                        name="description"
-                        onChange={onChange}
-                        value={form.description}
-                    />
-                </div>
-                <div className="form-group">
-                    <input 
-                        type="text" 
-                        className="form-control" 
-                        placeholder="img" 
-                        name="img"
-                        onChange={onChange}
-                        value={form.img}
-                    />
-                </div>
-                <div className="form-row">
-                    <div className="col">
-                        <input 
-                            type="text" 
-                            className="form-control" 
-                            placeholder="leftColor" 
-                            name="leftColor"
+                <form onSubmit={this.handleSubmit}
+                className="form">
+                    <div className="form-group">
+                        <br></br>
+                        <input
+                            type="text"
+                            className="form-control"
+                            placeholder="title"
+                            name="title"
                             onChange={onChange}
-                            value={form.leftColor}
+                            value={form.title}
                         />
                     </div>
-                    <div className="col">
-                        <input 
-                            type="text" 
+                    <div className="form-group">
+                        <input
+                            type="text"
                             className="form-control"
-                            placeholder="rightColor" 
-                            name="rightColor"
+                            placeholder="description"
+                            name="description"
                             onChange={onChange}
-                            value={form.rightColor}
-                        />    
+                            value={form.description}
+                        />
                     </div>
-                </div>
-                
-                <button 
-                    type="submit" 
-                    className="btn btn-primary"
-                >
-                    Submit
-                </button>
-                
-                <BtnNavegation
-                className="btn"
-                url="/exercises" />
+                    <div className="form-group">
+                        <input
+                            type="text"
+                            className="form-control"
+                            placeholder="img"
+                            name="img"
+                            onChange={onChange}
+                            value={form.img}
+                        />
+                    </div>
+                    <div className="form-row">
+                        <div className="col">
+                            <input
+                                type="text"
+                                className="form-control"
+                                placeholder="leftColor"
+                                name="leftColor"
+                                onChange={onChange}
+                                value={form.leftColor}
+                            />
+                        </div>
+                        <div className="col">
+                            <input
+                                type="text"
+                                className="form-control"
+                                placeholder="rightColor"
+                                name="rightColor"
+                                onChange={onChange}
+                                value={form.rightColor}
+                            />
+                        </div>
+                    </div>
 
-                
-                
-            </form>
-        </div>
+                    <button
+                        type="submit"
+                        className="btn-primary btn"
+                    >Submit</button>
+                    <div className="btn">
+                        <BtnNavegation
+                            url="/exercises" />
+                    </div>
+
+
+
+
+
+                </form>
+            </div>
         )
     }
 }
- export default ExerciseForm
+export default ExerciseForm

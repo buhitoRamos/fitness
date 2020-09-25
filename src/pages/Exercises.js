@@ -10,9 +10,7 @@ class Exercises extends React.Component {
     state = {
         data: CardInfo
     }
-
-
-
+    
     render() {
         return (
             <div>
@@ -21,12 +19,11 @@ class Exercises extends React.Component {
                 />
                 <ExerciseList
                     exercise={this.state.data}
-
                 />
                 <div className="btn">
-                   <BtnNavegation 
-                    url="/exercise/new"
-                />  
+                   <BtnNavegation                    
+                   url="/exercise/new"
+                   />  
                 </div>
                
             </div>

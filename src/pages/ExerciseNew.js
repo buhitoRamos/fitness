@@ -3,6 +3,7 @@ import "../components/ExerciseForm"
 import ExerciseForm from "../components/ExerciseForm"
 import Card from "../components/Card"
 import ImgList from "../components/ImgList"
+import CardInfo from '../components/CardInfo.json'
 
 class ExerciseNew extends React.Component {
 
@@ -19,7 +20,12 @@ class ExerciseNew extends React.Component {
             rightColor:"",
             leftColor:"",
             img:""
-        }
+        },        
+    }
+    
+    handleClick = e => {
+              
+        console.log(e.target.value)
     }
 
 
@@ -38,14 +44,16 @@ class ExerciseNew extends React.Component {
             <div className="container">
                 <div className="row">
                     <div className="col-sm">
-                        <Card {...this.state.form} />
+                        <Card {...this.state.form}
+                        />
                         <div>
-                            <ImgList />
+                            <ImgList
+                            onClick={this.handleClick}
+                            />
                         </div>
-                    </div>
-                    <div className="col-sm">
+                    </div>                    
+                    <div>
                         <ExerciseForm
-                            className="col-sm"
                             onChange={this.handleChange}
                             form={this.state.form}
                         />
