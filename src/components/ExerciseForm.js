@@ -1,5 +1,6 @@
 import React from "react"
 import BtnNavegation from '../components/BtnNavegation'
+import  "../components/styles/Btn.css"
 
 class ExerciseForm extends React.Component{
 
@@ -82,8 +83,13 @@ class ExerciseForm extends React.Component{
                 >
                     Submit
                 </button>
+                
                 <BtnNavegation
+                className="btn"
                 url="/exercises" />
+
+                
+                
             </form>
         </div>
         )

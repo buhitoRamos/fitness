@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 const BtnNavegation = ({url}) => (
     <div>
         <Link to={url}>
-            <img src={btn} className="btn" />
+            <img src={btn} />
         </Link>
 
     </div>

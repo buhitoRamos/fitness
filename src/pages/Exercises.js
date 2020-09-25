@@ -3,6 +3,7 @@ import ExerciseList from '../components/ExerciseList'
 import Wellcome from '../components/Wellcome'
 import CardInfo from '../components/CardInfo.json'
 import BtnNavegation from '../components/BtnNavegation'
+import "../components/styles/Btn.css"
 
 class Exercises extends React.Component {
 
@@ -22,9 +23,12 @@ class Exercises extends React.Component {
                     exercise={this.state.data}
 
                 />
-                <BtnNavegation
+                <div className="btn">
+                   <BtnNavegation 
                     url="/exercise/new"
-                />
+                />  
+                </div>
+               
             </div>
         )
     }

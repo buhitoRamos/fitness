@@ -2,6 +2,7 @@ import React from "react"
 import "../components/ExerciseForm"
 import ExerciseForm from "../components/ExerciseForm"
 import Card from "../components/Card"
+import ImgList from "../components/ImgList"
 
 class ExerciseNew extends React.Component {
 
@@ -34,13 +35,17 @@ class ExerciseNew extends React.Component {
     render() {
 
         return (
-            <div>
+            <div className="container">
                 <div className="row">
                     <div className="col-sm">
                         <Card {...this.state.form} />
+                        <div>
+                            <ImgList />
+                        </div>
                     </div>
                     <div className="col-sm">
                         <ExerciseForm
+                            className="col-sm"
                             onChange={this.handleChange}
                             form={this.state.form}
                         />
