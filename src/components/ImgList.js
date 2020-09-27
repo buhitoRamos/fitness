@@ -7,16 +7,24 @@ class ImgList extends React.Component {
             <div className="container">
                 {
                     cardInfo.map(data => {
-                        return (
-                            <h1>
+                        return ( 
+                            <div className="btn-group btn-group-toggle">
+                                
                                 <button value={data.img}
-                                onClick={onClick}>imagen {data.id}</button>
-                            </h1>
+                                inputMode="radio"
+                                className="btn btn-secondary btn-lg d-line"
+                                onClick={onClick}>Imagen {data.id}</button>
+                                                               
+
+                            </div>  
                         )
                     })
                 }
             </div>
+            
+        
         )
+        
     }
 }
 export default ImgList
