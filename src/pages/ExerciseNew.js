@@ -15,24 +15,23 @@ class ExerciseNew extends React.Component {
     */
     state = {
         form: {
-            title:"",
-            description:"",
-            rightColor:"",
-            leftColor:"",
-            img:""
+            title: "",
+            description: "",
+            rightColor: "",
+            leftColor: "",
+            img: ""
         },
-        cardInfo: CardInfo,               
+        cardInfo: CardInfo,
     }
-    
+
     handleClick = e => {
         this.setState({
-            form:{
+            form: {
                 ...this.state.form,
                 img: e.target.value
             }
         })
     }
-
 
     handleChange = e => {
         this.setState({
@@ -44,7 +43,6 @@ class ExerciseNew extends React.Component {
     }
 
     render() {
-
         return (
             <div className="container">
                 <div className="row">
@@ -54,11 +52,11 @@ class ExerciseNew extends React.Component {
                         <div className="container">
                             <br></br>
                             <ImgList
-                            cardInfo={this.state.cardInfo}
-                            onClick={this.handleClick}
+                                cardInfo={this.state.cardInfo}
+                                onClick={this.handleClick}
                             />
                         </div>
-                    </div>                    
+                    </div>
                     <div>
                         <ExerciseForm
                             onChange={this.handleChange}
