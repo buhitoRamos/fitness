@@ -20,12 +20,17 @@ class ExerciseNew extends React.Component {
             rightColor:"",
             leftColor:"",
             img:""
-        },        
+        },
+        cardInfo: CardInfo,               
     }
     
     handleClick = e => {
-              
-        console.log(e.target.value)
+        this.setState({
+            form:{
+                ...this.state.form,
+                img: e.target.value
+            }
+        })
     }
 
 
@@ -46,8 +51,10 @@ class ExerciseNew extends React.Component {
                     <div className="col-sm">
                         <Card {...this.state.form}
                         />
-                        <div>
+                        <div className="container">
+                            <br></br>
                             <ImgList
+                            cardInfo={this.state.cardInfo}
                             onClick={this.handleClick}
                             />
                         </div>
@@ -58,16 +65,9 @@ class ExerciseNew extends React.Component {
                             form={this.state.form}
                         />
                     </div>
-
-
                 </div>
 
             </div>
-
-
-
-
-
         )
 
     }
