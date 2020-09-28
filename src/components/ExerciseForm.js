@@ -10,7 +10,7 @@ class ExerciseForm extends React.Component {
 
     handleSubmit = e => {
         e.preventDefault()
-        console.log(this.state)
+        alert("the card was saved successfully")
     }
     render() {
         const { onChange, form } = this.props
@@ -80,11 +80,6 @@ class ExerciseForm extends React.Component {
                         <BtnNavegation
                             url="/exercises" />
                     </div>
-
-
-
-
-
                 </form>
             </div>
         )
