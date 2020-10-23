@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom'
 const BtnNavegation = ({url}) => (
     <div>
         <Link to={url}>
-            <src src={btn} />            
-        </Link>
+            <img src={btn} />            
+        </Link.
 
     </div>
 )
