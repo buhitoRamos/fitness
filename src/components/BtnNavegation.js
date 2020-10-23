@@ -6,8 +6,12 @@ import { Link } from 'react-router-dom'
 const BtnNavegation = ({url}) => (
     <div>
         <Link to={url}>
+<<<<<<< HEAD
             <img src={btn} />
             <p>holaa</p>
+=======
+            <src src={btn} />            
+>>>>>>> 5816fc8cad98e07895e977486f3f3782af100cdc
         </Link>
 
     </div>
