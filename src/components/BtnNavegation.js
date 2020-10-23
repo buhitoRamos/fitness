@@ -7,7 +7,7 @@ const BtnNavegation = ({url}) => (
     <div>
         <Link to={url}>
             <img src={btn} />
-            <p>hola</p>
+            <p>holaa</p>
         </Link>
 
     </div>
