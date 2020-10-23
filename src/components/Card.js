@@ -15,7 +15,7 @@ class Card extends React.Component {
             this.setState({
                 // image: this.props.img
             })
-        }, 5000)
+        }, 4000)
 
     }
 
